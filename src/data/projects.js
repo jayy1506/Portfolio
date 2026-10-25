@@ -1,0 +1,163 @@
+export const projectsData = [
+  {
+    id: "adaptive-rag-router",
+    number: "01",
+    title: "Adaptive-Retrieval RAG Router",
+    subtitle: "XGBoost Dynamic Chunk Budget & Query Router",
+    category: "Applied ML & LLM Efficiency",
+    badge: "FastAPI / XGBoost / ChromaDB",
+    status: "LIVE PRODUCTION",
+    image: "/project-rag-router.jpg",
+    hasLiveDemo: true,
+    description: "An XGBoost query classification router (14 linguistic features + MiniLM embeddings) that dynamically selects retrieval budgets (k ∈ {0, 3, 8, 15}), reaching 95.3% accuracy at under 3ms latency.",
+    longDescription: "Engineered an XGBoost query router with 14 engineered linguistic features and MiniLM sentence embeddings that predicts retrieval chunk budgets (k ∈ {0, 3, 8, 15}) to optimize LLM query costs. Reached 95.3% routing accuracy in under 3 ms latency. Added a 2-stage confidence fallback mechanism (threshold τ = 0.65) and sufficiency escalation over 10,900+ ChromaDB passages, cutting token overhead with 0.0% under-retrieval; served via high-performance FastAPI with SQLite SHA-256 LLM response caching, a live web dashboard, and Docker containerization.",
+    metrics: [
+      { label: "Accuracy", value: "95.3%" },
+      { label: "Routing Latency", value: "<3 ms" },
+      { label: "Passage Corpus", value: "10,900+" }
+    ],
+    techStack: ["Python", "FastAPI", "XGBoost", "ChromaDB", "Sentence-Transformers", "SQLite", "Docker"],
+    githubUrl: "https://github.com/jayy1506/Adaptive-Rag-Router",
+    liveDemoUrl: "https://adaptive-rag-router.onrender.com",
+    featured: true,
+    themeColor: "#ccff00"
+  },
+  {
+    id: "ayurlab",
+    number: "02",
+    title: "AyurLab Virtual Lab",
+    subtitle: "AI-Powered Ayurveda Compounding & Learning Platform",
+    category: "Fullstack AI & Education",
+    badge: "React 19 / Express 5 / AWS S3",
+    status: "LIVE PRODUCTION",
+    image: "/project-ayurlab.jpg",
+    hasLiveDemo: true,
+    description: "Interactive compounding simulator with deterministic grading, server-side classical text RAG Gemini tutor, and in-browser proctoring with chunked S3 uploads.",
+    longDescription: "Built an interactive compounding simulator using React 19 and @dnd-kit backed by a deterministic grading engine, paired with a server-side RAG Gemini tutor grounded directly in classical Ayurvedic medical texts, featuring a rotating key pool and emergency-triage safety guardrails. Integrated browser exam proctoring (MediaRecorder, MediaPipe) with chunked uploads to AWS S3. Hardened the API with Zod validation, Helmet security headers, Redis sliding-window rate limiting, JWT/refresh-cookie authentication, and a 30-test Vitest suite.",
+    metrics: [
+      { label: "Vitest Tests", value: "30 Passed" },
+      { label: "Proctoring", value: "MediaPipe" },
+      { label: "Cloud Upload", value: "AWS S3" }
+    ],
+    techStack: ["React 19", "Node.js", "Express 5", "MongoDB", "Gemini API", "AWS S3", "Docker", "Vitest", "Redis"],
+    githubUrl: "https://github.com/jayy1506/Ayurlab",
+    liveDemoUrl: "https://ayurlab-pt0n.onrender.com/",
+    featured: true,
+    themeColor: "#38bdf8"
+  },
+  {
+    id: "medpulse",
+    number: "03",
+    title: "MedPulse Nursing LMS",
+    subtitle: "Clinical Nursing LMS & RAG AI Tutor",
+    category: "Healthcare LMS & Semantic RAG",
+    badge: "React 19 / Express / Gemini RAG",
+    status: "LIVE PRODUCTION",
+    image: "/project-medpulse.jpg",
+    hasLiveDemo: true,
+    description: "Clinical nursing LMS backed by a RAG AI tutor utilizing Gemini text-embedding-004 retrieval and Gemini 1.5 Flash contextual answers.",
+    longDescription: "Engineered a clinical nursing LMS integrated with a specialized RAG AI tutor (Gemini text-embedding-004 document retrieval and Gemini 1.5 Flash answer generation). Backed the platform with MongoDB, Redis caching, and Firebase Admin. Built structured Pino logging, comprehensive Swagger (OpenAPI 3.0) API documentation, and complete Docker container orchestration.",
+    metrics: [
+      { label: "Embeddings", value: "text-emb-004" },
+      { label: "LLM Model", value: "Gemini 1.5 Flash" },
+      { label: "API Spec", value: "OpenAPI 3.0" }
+    ],
+    techStack: ["React 19", "Node.js", "Express", "MongoDB", "Gemini API", "Redis", "Docker", "Firebase Admin"],
+    githubUrl: "https://github.com/jayy1506/Nursing",
+    liveDemoUrl: "https://medpulse-nursing.vercel.app/",
+    featured: true,
+    themeColor: "#818cf8"
+  },
+  {
+    id: "safarx",
+    number: "04",
+    title: "SafarX Shared Mobility",
+    subtitle: "Corridor Shared-Seat Mobility Platform",
+    category: "Transit Systems & Fintech",
+    badge: "TypeScript / Node / Razorpay",
+    status: "LIVE PRODUCTION",
+    image: "/project-safarx.jpg",
+    hasLiveDemo: true,
+    description: "Shared-transit corridor mobility platform with atomic seat reservations, segment-based multi-hop double-booking prevention, and Razorpay HMAC verification.",
+    longDescription: "Built a shared-transit mobility platform serving Passenger, Driver, and Admin portals with a segment-based engine that prevents multi-hop double-booking along common transit corridors. Implemented atomic MongoDB seat holds with a 10-minute automated reaper job, seamless Razorpay payment processing with HMAC-SHA256 signature verification and idempotent webhooks, plus 4-digit boarding OTP security.",
+    metrics: [
+      { label: "Concurrency", value: "Atomic Holds" },
+      { label: "Reaper TTL", value: "10 Minutes" },
+      { label: "Security", value: "HMAC-SHA256" }
+    ],
+    techStack: ["TypeScript", "Node.js", "Express", "MongoDB", "Razorpay", "Docker", "TailwindCSS"],
+    githubUrl: "https://github.com/jayy1506/SafarX",
+    liveDemoUrl: "https://safarx-ikmw.onrender.com",
+    featured: true,
+    themeColor: "#ccff00"
+  },
+  {
+    id: "caretrack",
+    number: "05",
+    title: "CareTrack Clinic App",
+    subtitle: "Clinic Follow-up & Patient Reminder App",
+    category: "Mobile Health & Vision Extraction",
+    badge: "Flutter / Firebase / Gemini Vision",
+    status: "MOBILE APP",
+    image: "/project-caretrack.jpg",
+    hasLiveDemo: false,
+    description: "Cross-platform Flutter Android app with real-time Firestore sync, an automated follow-up triage dashboard, and Gemini API prescription extraction.",
+    longDescription: "Built a Flutter Android application for clinics (admin and doctor roles) with real-time Firestore synchronization, a prioritized follow-up dashboard (due today, 3 days, 7 days, overdue), and per-doctor data isolation using Firestore security rules and Cloud Functions. Designed an automated Gemini API pipeline that extracts medicines, dosages, and treatment durations from prescription photos and PDFs with mandatory doctor verification before dispatching WhatsApp, email, and push reminders via idempotent scheduling.",
+    metrics: [
+      { label: "Vision Extraction", value: "Gemini Vision" },
+      { label: "Sync Engine", value: "Firestore Realtime" },
+      { label: "Data Isolation", value: "RBAC + Cloud Fn" }
+    ],
+    techStack: ["Flutter", "Dart", "Firebase", "Firestore", "Cloud Functions", "Gemini API", "Android"],
+    githubUrl: "https://github.com/jayy1506/caretrack",
+    liveDemoUrl: null,
+    featured: true,
+    themeColor: "#ccff00"
+  },
+  {
+    id: "reveille",
+    number: "06",
+    title: "Reveille Voice Alarm",
+    subtitle: "AI Voice Alarm & Daily Mission Tracker",
+    category: "Android & Conversational AI",
+    badge: "Kotlin / Jetpack / FastAPI",
+    status: "MOBILE APP",
+    image: "/project-caretrack.jpg",
+    hasLiveDemo: false,
+    description: "Native Android alarm waking over lockscreens via AlarmManager with hands-free voice debriefs via Gemini 2.5 Flash and offline regex fallback.",
+    longDescription: "Built a native Android alarm application (Kotlin, Jetpack Compose, Material 3) that reliably wakes the screen over device lockscreens via AlarmManager.setAlarmClock, utilizing Android SpeechRecognizer and TextToSpeech for hands-free voice debriefing. Engineered a FastAPI backend powered by Gemini 2.5 Flash with Pydantic JSON schemas, multi-key failover, 8-second timeouts, and a regex-based offline parsing fallback.",
+    metrics: [
+      { label: "Lockscreen Alarm", value: "AlarmManager API" },
+      { label: "Voice Engine", value: "STT / TTS" },
+      { label: "LLM Backend", value: "Gemini 2.5 Flash" }
+    ],
+    techStack: ["Kotlin", "Jetpack Compose", "Material 3", "Python", "FastAPI", "Gemini 2.5 Flash", "Android"],
+    githubUrl: "https://github.com/jayy1506/Reveille",
+    liveDemoUrl: null,
+    featured: false,
+    themeColor: "#38bdf8"
+  },
+  {
+    id: "captrack",
+    number: "07",
+    title: "CapTrack Smart Inhaler Cap",
+    subtitle: "Offline Dose Logger & Patient Adherence Prototype",
+    category: "IoT Hardware & Embedded Systems",
+    badge: "ESP32 / DS3231 RTC / EEPROM",
+    status: "HARDWARE PROTOTYPE",
+    image: "/project-captrack.jpg",
+    hasLiveDemo: false,
+    description: "Low-cost, offline IoT inhaler cap logging patient dosage timestamps to EEPROM with real-time clock verification and automated adherence alerts.",
+    longDescription: "Designed the circuit architecture, firmware flow, and presentation for a low-cost, offline smart inhaler cap that records dose events using a DS3231 real-time clock (RTC) and non-volatile EEPROM storage. Built an interactive companion dashboard prototype demonstrating patient adherence monitoring, dose scheduling alerts, and telemetry reporting.",
+    metrics: [
+      { label: "Microcontroller", value: "ESP32 / Arduino" },
+      { label: "RTC Module", value: "DS3231 High Precision" },
+      { label: "Storage", value: "EEPROM Offline" }
+    ],
+    techStack: ["ESP32", "Arduino", "C++", "DS3231 RTC", "EEPROM", "IoT Sensors"],
+    githubUrl: "https://github.com/jayy1506",
+    liveDemoUrl: null,
+    featured: false,
+    themeColor: "#ccff00"
+  }
+];
